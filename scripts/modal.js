@@ -17,14 +17,12 @@ const body = document.querySelector("body");
 buttons.forEach((b) => {
   b.onclick = () => {
     modal.style.display = "block"
-    body.classList.add("dont_allow_scroll");
   }
 })
 
 
 const closeModal = () => {
   modal.style.display = "none";
-  body.classList.remove("dont_allow_scroll");
 }
 
 // When the user clicks on <span> (x), close the modal
