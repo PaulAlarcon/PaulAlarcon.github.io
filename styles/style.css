@@ -14,6 +14,11 @@ body {
   color: white;
   min-height: 100vh;
   background-color: black;
+  overflow-x: hidden;
+}
+
+.dont_allow_scroll {
+  overflow: hidden;
 }
 
 a {
@@ -138,8 +143,6 @@ header ul li a {
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
 }
 
 /* Modal Content/Box */
@@ -152,8 +155,6 @@ header ul li a {
   color: white;
   overflow: hidden;
   height: 100%;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
 }
 
 #modal-content #links {
@@ -173,8 +174,8 @@ header ul li a {
 }
 
 #modal-content #links a img {
-  margin: 10%;
-  width: 30%;
+  margin: 5%;
+  width: 15%;
   border-radius: 10px;
   border: 1px solid white;
   background: black;
@@ -182,6 +183,10 @@ header ul li a {
 
 #modal-content #links #linkedIn img {
   background-color: white;
+}
+
+#modal-content #title {
+  font-size: 4vmin;
 }
 
 #modal-content #title,
@@ -221,8 +226,6 @@ header ul li a {
   font-weight: 1000;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 4vmax;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
 }
 
 #modal-content #links a img:hover,
@@ -238,17 +241,9 @@ header ul li a {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  14.28% {
+  50% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-  }
-  85.71% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
   }
 }
 
@@ -257,17 +252,9 @@ header ul li a {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  14.28% {
+  50% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-  }
-  85.71% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
   }
 }
 

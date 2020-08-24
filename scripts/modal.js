@@ -9,20 +9,32 @@ buttons.push(document.querySelector("#final-contact"));
 // Get the <span> element that closes the modal
 const span = document.querySelector("#close-modal");
 
+//Get body to set overflow hidden
+
+const body = document.querySelector("body");
+
 // When the user clicks on the button, open the modal
 buttons.forEach((b) => {
-  b.onclick = () => {modal.style.display = "block"}
+  b.onclick = () => {
+    modal.style.display = "block"
+    body.classList.add("dont_allow_scroll");
+  }
 })
 
 
+const closeModal = () => {
+  modal.style.display = "none";
+  body.classList.remove("dont_allow_scroll");
+}
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  closeModal();
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    closeModal();
   }
 } 
