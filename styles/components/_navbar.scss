@@ -1,0 +1,47 @@
+header{
+  position : fixed;
+  top : 0;
+  left : 0;
+  width: 100%;
+  align-items: center;
+  padding : 1% 2%;
+  z-index: 1000;
+  transition : 0.6s;
+  background-color : black;
+    ul{
+      position : relative;
+      display : flex;
+       justify-content: center;
+       align-items: center;
+       transition : 0.6s;
+       li{
+         position: relative;
+         list-style: none;
+         a{
+           position : relative;
+           margin : 0 40px;
+           text-decoration : none;
+           color : white;
+           letter-spacing: 0.5vmin;
+           text-transform: uppercase;
+           transition : 0.6s;
+         }
+       }
+    }
+}
+
+.versatile{
+  background-color : rgba(black, .7);
+  transition: background-color 10000ms linear;
+  transition : 0.6s;
+  ul li a {
+    color : #fff;
+    transition: color 100ms linear;
+    transition : 0.6s;
+  }
+}
+
+.puff{
+  display : none;
+  transition : 0.6s;
+}
