@@ -2,9 +2,7 @@
 window.addEventListener('scroll', () => {
     const header = document.querySelector("header");
     header.classList.toggle('versatile', window.scrollY  > 0)
-    console.log(window.scrollY)
     const lastOne = document.querySelector("#projects");
-    console.log(lastOne)
     header.classList.toggle('puff', window.scrollY  >= lastOne.offsetTop)
 })
 

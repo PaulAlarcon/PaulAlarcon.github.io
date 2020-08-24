@@ -10,7 +10,6 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="https://unpkg.com/scrollreveal@4"></script>
-
   </head>
 
 
@@ -21,7 +20,7 @@
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a id="navbar-contact" href="#contact">contact</a></li>
           </ul>
       </header>
 
@@ -89,10 +88,9 @@
             </div>
         </div>
         <div id="more-info">
-          <a id ="more-projects" href="">More Projects</a>
-          <a id="final-contact" href="">
-            Contact Me
-            
+          <a id ="more-projects" href="./projects.html">More Projects
+          </a>
+          <a id="final-contact">
             <div id="arrowAnim">
               <div class="arrowSliding">
                 <div class="arrow"></div>
@@ -107,10 +105,25 @@
                 <div class="arrow"></div>
               </div>
             </div>
+            Contact Me
           </a>
         </div>
       </div>
     </div>
+    <div id="modal-contact">
+    <div id="modal-content">
+        <span id="close-modal">X</span>
+        <div id="title">
+          <h2>Thanks for checking my website!</h2>
+        </div>
+        <div id="links">
+          <a href="https://github.com/PaulAlarcon"><img src="/assets/white-github.png" alt=""></a>
+          <a id="linkedIn" href="https://www.linkedin.com/in/paul-alarcon-b29731148/"><img src="./assets/LI-In-Bug.png" alt=""></a>
+          <a href="mailto:paul.alarcon.me@gmail.com"><img src="./assets/gmail.png" alt=""></a>
+        </div>
+    </div>
+  </div>
     <script src="scripts/transitions.js"></script>
+    <script src="scripts/modal.js"></script>
   </body>
 </html>

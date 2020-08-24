@@ -15,8 +15,9 @@
     }
 
     #grid{
-      display : flex;
-      justify-content: space-between;
+      display : grid;
+      // justify-content: space-between;
+      grid-template-columns: repeat(4, 1fr);
       height : 100%;
       align-items: center;
 
@@ -25,8 +26,7 @@
         color : white;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        font-size : 4vmin;
-        margin : 1%;
+        font-size : 3.5vmin;
         text-align : center;
         height : 40%;
         max-width: 20%;
@@ -109,9 +109,7 @@
                 100% { opacity:0; transform: translateX(8vw); }	
               }
         }
-        #more-projects{
-            
-        }
+
     }
 
 
@@ -135,7 +133,7 @@
     }
  }
 
- #more-projects {
+ #more-projects, #final-contact {
     -webkit-animation: breathing 5s ease-out infinite normal;
     animation: breathing 5s ease-out infinite normal;
     }
