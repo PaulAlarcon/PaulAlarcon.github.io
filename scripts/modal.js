@@ -16,7 +16,7 @@ const body = document.querySelector("body");
 // When the user clicks on the button, open the modal
 buttons.forEach((b) => {
   b.onclick = () => {
-    modal.style.display = "block"
+    modal.style.display = "flex"
   }
 })
 

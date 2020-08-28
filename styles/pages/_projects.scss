@@ -11,28 +11,27 @@
         border-bottom: 1px solid white;
         text-transform: uppercase;
         letter-spacing: 0.5em;
-        font-size : 4vmax;
+        font-size : 3.5vmax;
     }
 
     #grid{
       display : grid;
-      // justify-content: space-between;
       grid-template-columns: repeat(4, 1fr);
       height : 100%;
       align-items: center;
-
       #grid-element{        
         background-color : rgba( rgb(182, 10, 10), .4);
         color : white;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        font-size : 3.5vmin;
+        font-size : 2.5vmax;
         text-align : center;
         height : 40%;
         max-width: 20%;
         border-radius: 25px;
         display : flex;
         align-items: center;
+        cursor: pointer;
       }
 
       #grid-element:hover,
@@ -51,17 +50,17 @@
 
     #more-info{
         height: 10%;
-        display : none;
         width: 100%;
         display : flex;
         justify-content: space-between;
         color : white;
         a{
-            font-size : 2vmax;
+            font-size : 3vmax;
             padding : 10px;
         }
         #final-contact{
           display : flex;
+          cursor: pointer;
             #arrowAnim {
                 display: flex;
                 justify-content: center;
@@ -112,26 +111,6 @@
 
     }
 
-
-@media only screen and (max-width : 768px ){
-    #projects{
-        background-color: black;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
-        gap : 2% 0;
-        figure{
-            h2{
-                font-size: 100%;
-            }
-            padding: 20px;
-            border-radius: 25px;
-            figcaption p, img{
-                display: none;
-            }
-        }
-
-    }
- }
 
  #more-projects, #final-contact {
     -webkit-animation: breathing 5s ease-out infinite normal;
@@ -185,4 +164,32 @@
     -ms-transform: scale(0.9);
     transform: scale(0.9);
   }
+}
+
+@media only screen and (max-width : 768px ){
+ #projects{
+   padding: 10% 5%;
+   
+   #grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding-bottom : 20%;
+    justify-content: space-between;
+    padding-top: 5%;
+    #grid-element{    
+      max-width: 100%;
+      justify-content: center;
+      padding : 40px 0;
+      border-radius: 20px 10px;
+      font-size : 3vmax;
+      letter-spacing: .1em;
+      background-color : rgb(155, 4, 4);
+     }
+   }
+   #more-info { 
+     a {
+        font-size : 3vmax;
+    }
+  }
+ }
 }

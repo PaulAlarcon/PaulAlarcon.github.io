@@ -10,18 +10,41 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script
+      src="https://kit.fontawesome.com/67b2a04d4b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-
 
   <body>
     <div class="container">
       <header>
-          <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a id="navbar-contact" href="#contact">contact</a></li>
-          </ul>
+        <ul>
+          <li>
+            <a href="#home">
+              <span id="text">home</span>
+              <i id="icon" class="fas fa-home"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <span id="text">about</span>
+              <i id="icon" class="fas fa-user-tie"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <span id="text">projects</span>
+              <i id="icon" class="fas fa-tasks"></i>
+            </a>
+          </li>
+          <li>
+            <a id="navbar-contact">
+              <span id="text">contact</span>
+              <i  id="icon" class="fas fa-address-card" ></i>
+            </a>
+          </li>
+        </ul>
       </header>
 
       <div id="home">
@@ -30,12 +53,11 @@
             <h1 id="name">Hi I'm Paul</h1>
             <p id="title">Software Developer</p>
             <div id="arrow-button">
-                  <a data-scroll href="#about">
-                    <div class="arrow"></div>
-                  </a>
+              <a data-scroll href="#about">
+                <div class="arrow"></div>
+              </a>
             </div>
           </div>
-
         </div>
         <div id="right">
           <div id="img-container">
@@ -49,47 +71,38 @@
           <h2>Who am I?</h2>
         </div>
         <div id="description">
-            <p>
-              My name is Paul Alarcon. 
-              I am a software and web developer who works with multiple technologies throughout his career. 
-              Recently graduated with a B.S. in Computer Science.
+          <p>
+            My name is Paul Alarcon. I am a software and web developer who works
+            with multiple technologies throughout his career. Recently graduated
+            with a B.S. in Computer Science.
           </p>
         </div>
         <div id="hobbies">
-          Love music, sports, and playing instruments in particular such as the guitar and the bass. 
-          Used to play in a band before moving to the US.
+          Love music, sports, and playing instruments in particular such as the
+          guitar and the bass. Used to play in a band before moving to the US.
         </div>
         <div id="arrow-button">
           <a data-scroll href="#projects">
             <div class="arrow"></div>
           </a>
         </div>
-    </div>
+      </div>
 
-        <div id="projects">
-          <div id="title">
-            <h2>Projects</h2>
-          </div>
-          <div id="grid">
-            <div id="grid-element">
-              Sorting Visualizer
-            </div>
+      <div id="projects">
+        <div id="title">
+          <h2>Projects</h2>
+        </div>
+        <div id="grid">
+          <div id="grid-element">Sorting Visualizer</div>
 
-            <div id="grid-element">
-              Graph Visualizer
-            </div>
+          <div id="grid-element">Graph Visualizer</div>
 
-            <div id="grid-element">
-              Reddit Clone
-            </div>
+          <div id="grid-element">Reddit Clone</div>
 
-            <div id="grid-element">
-              8-Bit Audio Generator
-            </div>
+          <div id="grid-element">8-Bit Audio Generator</div>
         </div>
         <div id="more-info">
-          <a id ="more-projects" href="./projects.html">More Projects
-          </a>
+          <a id="more-projects" href="./projects.html">More Projects </a>
           <a id="final-contact">
             <div id="arrowAnim">
               <div class="arrowSliding">
@@ -111,18 +124,26 @@
       </div>
     </div>
     <div id="modal-contact">
-    <div id="modal-content">
+      <div id="modal-content">
         <span id="close-modal">X</span>
         <div id="title">
           <h2>Thanks for checking my website!</h2>
         </div>
         <div id="links">
-          <a href="https://github.com/PaulAlarcon"><img src="/assets/white-github.png" alt=""></a>
-          <a id="linkedIn" href="https://www.linkedin.com/in/paul-alarcon-b29731148/"><img src="./assets/LI-In-Bug.png" alt=""></a>
-          <a href="mailto:paul.alarcon.me@gmail.com"><img src="./assets/gmail.png" alt=""></a>
+          <a href="https://github.com/PaulAlarcon"
+            ><img src="/assets/white-github.png" alt=""
+          /></a>
+          <a
+            id="linkedIn"
+            href="https://www.linkedin.com/in/paul-alarcon-b29731148/"
+            ><img src="./assets/LI-In-Bug.png" alt=""
+          /></a>
+          <a href="mailto:paul.alarcon.me@gmail.com"
+            ><img src="./assets/gmail.png" alt=""
+          /></a>
         </div>
+      </div>
     </div>
-  </div>
     <script src="scripts/transitions.js"></script>
     <script src="scripts/modal.js"></script>
   </body>

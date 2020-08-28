@@ -55,16 +55,23 @@
         grid-template-rows: 1fr;
         width: 100%;
         #left{
-            height: 50%;
+            height: 100%;
             width: 100%;
             #left-inner{
-                #profile-pic-wrapper{
-                    visibility: visible;
-                }
+                height: 25%;
             }
         }
         #right{
             display : none;
+        }
+    }
+
+    #left-inner{
+        #name {
+            font-size : 6vmax;
+        }
+        #title{
+            font-size: 3vmax;
         }
     }
  }

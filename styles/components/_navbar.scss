@@ -3,7 +3,6 @@ header{
   top : 0;
   left : 0;
   width: 100%;
-  align-items: center;
   padding : 1% 2%;
   z-index: 1000;
   transition : 0.6s;
@@ -44,4 +43,24 @@ header{
 .puff{
   display : none;
   transition : 0.6s;
+}
+
+
+@media only screen and (max-width : 768px ){
+  header {
+    top: auto; 
+    bottom: 0;
+    background-color : darkred;
+    height: 10%;
+
+    display: flex;
+    justify-content: center;
+
+    a{
+      font-size : 4vmax;
+      #text{
+      display: none;
+      }
+    }
+  }
 }

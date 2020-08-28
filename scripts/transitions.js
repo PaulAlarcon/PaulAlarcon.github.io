@@ -12,6 +12,7 @@ ScrollReveal().reveal("#home", {
     duration: 1000,
     easing: "ease-in",
     origin: "left",
+    mobile: false
   });
   
   ScrollReveal().reveal("#about", {
@@ -20,6 +21,7 @@ ScrollReveal().reveal("#home", {
     duration: 1000,
     easing: "ease-in",
     origin: "right",
+    mobile: false
   });
 
   ScrollReveal().reveal("#projects", {
@@ -28,5 +30,6 @@ ScrollReveal().reveal("#home", {
     duration: 1000,
     easing: "ease-in",
     origin: "bottom",
+    mobile: false
   });
 
