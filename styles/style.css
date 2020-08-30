@@ -316,7 +316,8 @@ header ul li a {
           justify-content: space-between;
 }
 
-#home #left, #home #right {
+#home #left,
+#home #right {
   height: 100vh;
   width: 100%;
 }
@@ -344,23 +345,29 @@ header ul li a {
 }
 
 #home #right {
-  background-image: url("/assets/bg.jpeg");
+  background-image: url("/assets/bg.png");
+  background-size: cover;
+}
+
+#home #right #container {
+  height: 100%;
   display: -ms-grid;
   display: grid;
 }
 
-#home #right #img-container {
+#home #right #container #img-container {
   width: 80%;
   margin: auto;
 }
 
-#home #right #img-container img {
+#home #right #container #img-container img {
   width: 100%;
   height: auto;
   border-radius: 20px;
 }
 
-#left-inner #title, #left-inner #name {
+#left-inner #title,
+#left-inner #name {
   font-weight: 500;
   letter-spacing: 1vmin;
   text-align: center;
