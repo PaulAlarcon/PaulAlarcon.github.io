@@ -166,11 +166,11 @@ header ul li a {
 
 /* Modal Content/Box */
 #modal-content {
-  -webkit-animation: anim 3.5s 1;
-          animation: anim 3.5s 1;
+  -webkit-animation: anim 1s 1;
+          animation: anim 1s 1;
   background-color: darkred;
   width: 40%;
-  float: right;
+  margin-left: auto;
   color: white;
   overflow: hidden;
   height: 100%;
@@ -222,7 +222,7 @@ header ul li a {
   font-size: 3vmax;
   font-weight: bold;
   width: 20%;
-  border-radius: 0 25%;
+  border-radius: 0 0 0 0;
   height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +282,8 @@ header ul li a {
 
 @media only screen and (max-width: 768px) {
   #modal-contact #modal-content {
+    -webkit-animation: anim .5s 1;
+            animation: anim .5s 1;
     -webkit-box-shadow: 10px 10px 10px 20px black;
             box-shadow: 10px 10px 10px 20px black;
     width: 80%;

@@ -15,10 +15,10 @@
 
 /* Modal Content/Box */
 #modal-content {
-  animation: anim 3.5s 1;
+  animation: anim 1s 1;
   background-color: darkred;
   width: 40%;
-  float: right;
+  margin-left: auto;
   color: white;
   overflow: hidden;
   height: 100%;
@@ -58,7 +58,7 @@
     font-size: 3vmax;
     font-weight: bold;
     width: 20%;
-    border-radius: 0 25%;
+    border-radius: 0 0 0 0;
     height: 10%;
     display: flex;
     justify-content: center;
@@ -99,8 +99,8 @@
 
 @media only screen and (max-width : 768px ){
   #modal-contact {
-    // display: block;
     #modal-content{
+      animation: anim .5s 1;
       box-shadow: 10px 10px 10px 20px black;
       width: 80%;
       height: 80%;
